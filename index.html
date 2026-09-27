@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Resources</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Community Resources</h1>
+
+        <p class="subtitle">
+            Find health and social-service resources in your ZIP code.
+        </p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="zipcode"
+                placeholder="Enter ZIP code"
+                maxlength="5"
+            >
+
+            <button onclick="findResources()">
+                Search
+            </button>
+        </div>
+
+        <div id="results"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
