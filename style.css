@@ -1,100 +1,53 @@
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background: #f4f7fb;
-    color: #1f2937;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-header {
-    background: #13294b;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
+    <title>NC Behavioral Health Crisis Resources</title>
 
-header h1 {
-    margin-top: 0;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-header p {
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.5;
-}
+<body>
 
-main {
-    max-width: 850px;
-    margin: auto;
-    padding: 30px 20px;
-}
+    <header>
+        <h1>North Carolina Behavioral Health Crisis Resources</h1>
 
-.search-section {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
+        <p>
+            Find Mobile Crisis Teams and alternative 911 behavioral
+            health response programs serving your county.
+        </p>
+    </header>
 
-label {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+    <main>
 
-select {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #aaa;
-}
+        <section class="search-section">
 
-.results-heading {
-    margin-top: 35px;
-    border-bottom: 3px solid #4b9cd3;
-    padding-bottom: 8px;
-}
+            <label for="countySelect">
+                Select your North Carolina county:
+            </label>
 
-.provider-card {
-    background: white;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 5px solid #4b9cd3;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
+            <select id="countySelect">
+                <option value="">Choose a county...</option>
+            </select>
 
-.provider-card h3 {
-    margin-top: 0;
-}
+        </section>
 
-.provider-card p {
-    line-height: 1.5;
-}
+        <div id="results"></div>
 
-.provider-card a {
-    color: #0066cc;
-}
+    </main>
 
-.phone {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
+    <footer>
+        <p>
+            If there is an immediate life-threatening emergency,
+            call 911.
+        </p>
+    </footer>
 
-.emergency {
-    background: #fff3cd;
-    border-left: 5px solid #d39e00;
-    padding: 15px;
-    margin-top: 30px;
-}
+    <script src="script.js"></script>
 
-footer {
-    text-align: center;
-    padding: 25px;
-    color: #555;
-}
+</body>
+
+</html>
