@@ -1,37 +1,122 @@
-{
-    "27514": {
-        "city": "Chapel Hill",
-        "county": "Orange County",
-        "state": "NC",
-        "resources": [
+
+    
+  
             {
-                "name": "Example Community Health Center",
-                "type": "Healthcare",
-                "description": "Example primary care resource.",
-                "phone": "919-555-1234",
-                "website": "https://example.com"
-            },
-            {
-                "name": "Example Food Resource",
-                "type": "Food Assistance",
-                "description": "Example food assistance resource.",
-                "phone": "919-555-5678",
-                "website": "https://example.com"
+                "name": "RHA Health Services East",
+                "type": "Mobile Crisis",
+                "phone": "844-709-4097",
+                "website": "https://rhahealthservices.org/mobile-crisis-management/"
             }
         ]
     },
-
-    "27701": {
-        "city": "Durham",
-        "county": "Durham County",
+    "Wake County": {
         "state": "NC",
         "resources": [
             {
-                "name": "Example Mental Health Resource",
-                "type": "Mental Health",
-                "description": "Example mental health resource.",
-                "phone": "919-555-1111",
-                "website": "https://example.com"
+                "name": "Therapeutic Alternatives",
+                "type": "Mobile Crisis",
+                "phone": "877-626-1772",
+                "website": "https://www.mytahome.com/mobile-crisis"
+            }
+        ]
+    },
+    "Warren County": {
+        "state": "NC",
+        "resources": [
+            {
+                "name": "Integrated Family Services",
+                "type": "Mobile Crisis",
+                "phone": "866-437-1821",
+                "website": "https://integratedfamilyservices.net/services/mobile-crisis-management/"
+            },
+            {
+                "name": "Daymark Recovery Services",
+                "type": "Mobile Crisis",
+                "phone": "866-275-9552",
+                "website": "https://www.daymarkrecovery.org/services/mobile-crisis-management"
+            }
+        ]
+    },
+    "Washington County": {
+        "state": "NC",
+        "resources": [
+            {
+                "name": "Integrated Family Services",
+                "type": "Mobile Crisis",
+                "phone": "866-437-1821",
+                "website": "https://integratedfamilyservices.net/services/mobile-crisis-management/"
+            }
+        ]
+    },
+    "Watauga County": {
+        "state": "NC",
+        "resources": [
+            {
+                "name": "Daymark Recovery Services",
+                "type": "Mobile Crisis",
+                "phone": "866-275-9552",
+                "website": "https://www.daymarkrecovery.org/services/mobile-crisis-management"
+            }
+        ]
+    },
+    "Wayne County": {
+        "state": "NC",
+        "resources": [
+            {
+                "name": "Easterseals PORT Health",
+                "type": "Mobile Crisis",
+                "phone": "866-241-7245",
+                "website": "https://eastersealsport.com/mobile-crisis-management/"
+            }
+        ]
+    },
+    "Wilkes County": {
+        "state": "NC",
+        "resources": [
+            {
+                "name": "Daymark Recovery Services",
+                "type": "Mobile Crisis",
+                "phone": "866-275-9552",
+                "website": "https://www.daymarkrecovery.org/services/mobile-crisis-management"
+            }
+        ]
+    },
+    "Wilson County": {
+        "state": "NC",
+        "resources": [
+            {
+                "name": "Integrated Family Services",
+                "type": "Mobile Crisis",
+                "phone": "866-437-1821",
+                "website": "https://integratedfamilyservices.net/services/mobile-crisis-management/"
+            },
+            {
+                "name": "Easterseals PORT Health",
+                "type": "Mobile Crisis",
+                "phone": "866-241-7245",
+                "website": "https://eastersealsport.com/mobile-crisis-management/"
+            }
+        ]
+    },
+    "Yadkin County": {
+        "state": "NC",
+        "resources": [
+            {
+                "name": "Daymark Recovery Services",
+                "type": "Mobile Crisis",
+                "phone": "866-275-9552",
+                "website": "https://www.daymarkrecovery.org/services/mobile-crisis-management"
+            }
+        ]
+    },
+    "Yancey County": {
+        "state": "NC",
+        "resources": [
+            {
+                "name": "RHA Health Services West",
+                "type": "Mobile Crisis",
+                "phone": "888-573-1006",
+                "website": "https://rhahealthservices.org/mobile-crisis-management/"
             }
         ]
     }
