@@ -1,100 +1,382 @@
+/* ==============================
+   BASIC PAGE
+   ============================== */
+
 * {
     box-sizing: border-box;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f4f7fb;
     color: #1f2937;
-}
-
-header {
-    background: #13294b;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin-top: 0;
-}
-
-header p {
-    max-width: 700px;
-    margin: 0 auto;
     line-height: 1.5;
 }
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+.site-header {
+    background: #13294b;
+    color: white;
+    padding: 28px 18px;
+}
+
+.header-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.site-header h1 {
+    font-size: 1.65rem;
+    line-height: 1.15;
+    margin: 0 0 10px 0;
+}
+
+.site-header p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+
+/* ==============================
+   MAIN CONTENT
+   ============================== */
 
 main {
     max-width: 850px;
     margin: auto;
-    padding: 30px 20px;
+    padding: 18px;
 }
 
-.search-section {
+
+/* ==============================
+   COUNTY SEARCH
+   ============================== */
+
+.search-card {
     background: white;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
 }
 
-label {
+.search-card label {
     display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
-select {
+.search-wrapper {
+    position: relative;
+}
+
+#countySearch {
     width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #aaa;
-}
-
-.results-heading {
-    margin-top: 35px;
-    border-bottom: 3px solid #4b9cd3;
-    padding-bottom: 8px;
-}
-
-.provider-card {
+    min-height: 52px;
+    padding: 13px 15px;
+    font-size: 16px;
+    border: 2px solid #8a99a8;
+    border-radius: 8px;
     background: white;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 5px solid #4b9cd3;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.provider-card h3 {
+#countySearch:focus {
+    outline: 3px solid rgba(75,156,211,0.25);
+    border-color: #4b9cd3;
+}
+
+.search-example {
+    margin: 8px 0 0 0;
+    color: #687382;
+    font-size: 0.9rem;
+}
+
+
+/* SEARCH SUGGESTIONS */
+
+.suggestions {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 4px);
+    left: 0;
+    background: white;
+    border: 1px solid #b8c0c8;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    max-height: 260px;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.suggestion-item {
+    padding: 14px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #e6e9ed;
+    font-size: 1rem;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover,
+.suggestion-item.active {
+    background: #eaf3fa;
+}
+
+
+/* ==============================
+   COUNTY RESULTS
+   ============================== */
+
+.county-heading {
+    margin: 30px 0 5px 0;
+    font-size: 1.65rem;
+}
+
+.county-intro {
     margin-top: 0;
+    color: #586574;
 }
 
-.provider-card p {
-    line-height: 1.5;
-}
 
-.provider-card a {
-    color: #0066cc;
-}
+/* ==============================
+   SERVICE SECTIONS
+   ============================== */
 
-.phone {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.emergency {
-    background: #fff3cd;
-    border-left: 5px solid #d39e00;
-    padding: 15px;
+.service-section {
     margin-top: 30px;
 }
 
-footer {
+.section-header {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #4b9cd3;
+    margin-bottom: 15px;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.section-description {
+    margin: 7px 0 0 0;
+    color: #56616d;
+    font-size: 0.95rem;
+}
+
+
+/* ==============================
+   PROVIDER CARDS
+   ============================== */
+
+.provider-card {
+    background: white;
+    margin: 14px 0;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #4b9cd3;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.08);
+}
+
+.provider-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+}
+
+.provider-card p {
+    margin: 9px 0;
+}
+
+.provider-card .hours {
+    font-weight: 600;
+}
+
+
+/* ==============================
+   BIG CALL BUTTON
+   ============================== */
+
+.call-button {
+    display: block;
+    width: 100%;
+    margin-top: 17px;
+    padding: 15px 18px;
+
+    background: #176b3a;
+    color: white;
+
     text-align: center;
-    padding: 25px;
-    color: #555;
+    text-decoration: none;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    border-radius: 8px;
+}
+
+.call-button:hover {
+    background: #12572f;
+}
+
+.call-button:active {
+    transform: scale(0.99);
+}
+
+
+/* WEBSITE BUTTON */
+
+.website-button {
+    display: block;
+    width: 100%;
+
+    margin-top: 10px;
+    padding: 13px 18px;
+
+    border: 2px solid #4b9cd3;
+    border-radius: 8px;
+
+    color: #174f78;
+    background: white;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* ==============================
+   GUIDANCE
+   ============================== */
+
+.how-it-works {
+    margin-top: 45px;
+}
+
+.how-it-works > h2 {
+    font-size: 1.5rem;
+}
+
+.guidance-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.07);
+}
+
+.emergency-guidance {
+    border-left: 6px solid #c0392b;
+}
+
+.mobile-guidance {
+    border-left: 6px solid #4b9cd3;
+}
+
+.guidance-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.guidance-title h3 {
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+.guidance-subtitle {
+    margin: 2px 0 0 0 !important;
+    color: #5e6873;
+    font-size: 0.9rem;
+}
+
+.guidance-icon {
+    min-width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #13294b;
+    color: white;
+
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+
+/* ==============================
+   NO LOCAL 911 PROGRAM
+   ============================== */
+
+.no-service {
+    background: #eef2f5;
+    padding: 17px;
+    border-radius: 9px;
+    color: #4c5864;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    margin-top: 40px;
+    padding: 25px 20px;
+    background: #e5e9ee;
+    text-align: center;
+    color: #4d5965;
+    font-size: 0.9rem;
+}
+
+
+/* ==============================
+   LARGER SCREENS
+   ============================== */
+
+@media (min-width: 700px) {
+
+    .site-header {
+        padding: 45px 25px;
+    }
+
+    .site-header h1 {
+        font-size: 2.25rem;
+    }
+
+    main {
+        padding: 30px 25px;
+    }
+
+    .search-card {
+        padding: 28px;
+    }
+
+    .provider-card {
+        padding: 24px;
+    }
+
+    .call-button,
+    .website-button {
+        display: inline-block;
+        width: auto;
+        min-width: 180px;
+        margin-right: 8px;
+    }
 }
