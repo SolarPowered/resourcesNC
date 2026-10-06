@@ -12,42 +12,143 @@
 
 <body>
 
-    <header>
-        <h1>North Carolina Behavioral Health Crisis Resources</h1>
-
+<header class="site-header">
+    <div class="header-content">
+        <h1>NC Behavioral Health Crisis Resources</h1>
         <p>
-            Find Mobile Crisis Teams and alternative 911 behavioral
-            health response programs serving your county.
+            Find behavioral health crisis services available in your North Carolina county.
         </p>
-    </header>
+    </div>
+</header>
 
-    <main>
+<main>
 
-        <section class="search-section">
+    <!-- COUNTY SEARCH -->
 
-            <label for="countySelect">
-                Select your North Carolina county:
-            </label>
+    <section class="search-card">
 
-            <select id="countySelect">
-                <option value="">Choose a county...</option>
-            </select>
+        <label for="countySearch">
+            Find your county
+        </label>
 
-        </section>
+        <div class="search-wrapper">
 
-        <div id="results"></div>
+            <input
+                type="text"
+                id="countySearch"
+                placeholder="Start typing a county..."
+                autocomplete="off"
+                aria-autocomplete="list"
+                aria-controls="countySuggestions"
+            >
 
-    </main>
+            <div
+                id="countySuggestions"
+                class="suggestions"
+                role="listbox"
+            ></div>
 
-    <footer>
-        <p>
-            If there is an immediate life-threatening emergency,
-            call 911.
+        </div>
+
+        <p class="search-example">
+            Example: Orange, Durham, Wake
         </p>
-    </footer>
 
-    <script src="script.js"></script>
+    </section>
+
+
+    <!-- RESULTS -->
+
+    <div id="results"></div>
+
+
+    <!-- EXPLANATION -->
+
+    <section class="how-it-works">
+
+        <h2>Which service should I use?</h2>
+
+
+        <div class="guidance-card emergency-guidance">
+
+            <div class="guidance-title">
+                <span class="guidance-icon">911</span>
+
+                <div>
+                    <h3>911 Behavioral Health Response</h3>
+                    <p class="guidance-subtitle">
+                        For situations requiring a rapid response
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                Some North Carolina communities have specialized behavioral
+                health teams that can be dispatched through 911 for eligible calls.
+                These programs may respond without police depending on the
+                situation and local program.
+            </p>
+
+            <p>
+                <strong>
+                    If someone is in immediate danger or needs emergency
+                    medical attention, call 911.
+                </strong>
+            </p>
+
+        </div>
+
+
+        <div class="guidance-card mobile-guidance">
+
+            <div class="guidance-title">
+
+                <span class="guidance-icon">MCT</span>
+
+                <div>
+                    <h3>Mobile Crisis Team</h3>
+                    <p class="guidance-subtitle">
+                        Behavioral health crisis assessment and support
+                    </p>
+                </div>
+
+            </div>
+
+            <p>
+                Mobile Crisis Teams can travel to a person experiencing a
+                mental health or substance use crisis. They provide assessment,
+                de-escalation, and help determine next steps for treatment.
+            </p>
+
+            <p>
+                Mobile Crisis Teams are available 24/7 throughout North
+                Carolina, but response times vary and may be two hours or longer.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        This resource is intended to help identify local behavioral health
+        crisis services. Program availability and service areas may change.
+    </p>
+
+    <p>
+        <strong>
+            For an immediate life-threatening emergency, call 911.
+        </strong>
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
