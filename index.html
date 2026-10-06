@@ -15,17 +15,18 @@
         <h1>Community Resources</h1>
 
         <p class="subtitle">
-            Find health and social-service resources in your ZIP code.
+            Find behavioral health 911 and mobile crisis services available in your North Carolina county.
         </p>
 
-        <div class="search-box">
-            <input
-                type="text"
-                id="zipcode"
-                placeholder="Enter ZIP code"
-                maxlength="5"
-            >
+<div class="search-box">
+    <select id="county">
+        <option value="">Select your county</option>
+    </select>
 
+    <button onclick="findResources()">
+        Search
+    </button>
+</div>
             <button onclick="findResources()">
                 Search
             </button>
